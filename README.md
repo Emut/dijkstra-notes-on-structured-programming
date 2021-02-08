@@ -5,8 +5,6 @@ Original can be found at https://pure.tue.nl/ws/portalfiles/portal/2408738/25282
 
 All rights belong to the Eindhoven University of Technology.
 
-![A picture of Dijkstra](https://upload.wikimedia.org/wikipedia/commons/d/d9/Edsger_Wybe_Dijkstra.jpg =250x )
-
 <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Edsger_Wybe_Dijkstra.jpg" alt="A picture of Dijkstra" width="200"/>
 
 <sup><sub>Image copyright: By Hamilton Richards - manuscripts of Edsger W. Dijkstra, University Texas at Austin, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=4204157</sub></sup>
