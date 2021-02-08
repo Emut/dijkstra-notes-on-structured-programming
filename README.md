@@ -1,2 +1,6 @@
 # dijkstra-notes-on-structured-programming
-digitalized version of Dijkstra's Notes on Structured Programming
+Digitalized version of Dijkstra's Notes on Structured Programming
+
+Was reading it, thought why not digitize it along the way.
+
+Will add chapters as I read.
