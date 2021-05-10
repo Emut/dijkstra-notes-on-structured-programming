@@ -16,3 +16,55 @@ correctness) there are three that I should like to mention explicitly:
     \item Mathematical induction
     \item Abstraction.
 \end{enumerate}
+
+\dashuline{On enumeration.}
+
+I regard as an appeal to enumeration the effort to verify a property of the
+computations that can be evoked by an enumerated set of statements performed in
+sequence, including conditional clauses distinguishing between two or more cases.
+Let me give a simple example of what I call ``enumerative reasoning''.
+
+It is asked to establish that the successive execution of the following two
+statements
+\begin{align*}
+    &``dd:=dd\ /\ 2; \\
+    &\underline{if}\  dd \leq r\ \underline{do}\ r:= r - dd''
+\end{align*}
+operating on the variables ``$r$'' and ``$dd$'' leaves the relations
+\begin{align} \label{eq:enumeration1}
+    0 \leq r < dd
+\end{align}
+invariant. One just ``follows'' the little piece of program assuming that
+(\ref{eq:enumeration1}) is satisfied to start with. After the execution of the
+first statement, which halves the value of $dd$, but leaves $r$ unchanged,
+the relations
+\begin{align} \label{eq:enumeration2}
+0 \leq r < 2*dd
+\end{align}
+will hold. Now we distinguish two mutually exclusive cases.
+
+\noindent1) $dd \leq r$.\qquad Together with (\ref{eq:enumeration2}) this leads to the
+relations
+\begin{equation}
+    dd \leq r < 2*dd\qquad;\label{eq:enumeration3}
+\end{equation}
+In this case the statement following \underline{do} will be executed,
+ordering a decrease of $r$ by $dd$, so that from (\ref{eq:enumeration3})
+it follows that eventually
+\begin{equation*}
+    0 \leq r < dd\qquad\qquad,
+\end{equation*}
+i.e. (\ref{eq:enumeration1}) will be satisfied.
+
+\noindent2) \underline{non} $dd \leq r$ (i.e. $dd > r$).\qquad In this case the
+statement following \underline{do} will be skipped and therefore also $r$ has
+its final value. In this case ``$dd > r$'' together with \eqref{eq:enumeration2},
+which is valid after the execution of the first statement leads immediately to
+\begin{equation*}
+    0 \leq r < dd
+\end{equation*}
+so that also in the second case \eqref{eq:enumeration1} will be satisfied.
+
+Thus we have completed our proof of the in variance of relations
+\eqref{eq:enumeration1}, we have also completed our example of enumerative
+reasoning, conditional clauses included.
